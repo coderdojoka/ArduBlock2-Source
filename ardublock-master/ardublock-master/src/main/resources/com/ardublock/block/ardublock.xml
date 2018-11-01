@@ -448,7 +448,7 @@
 			</BlockConnectors>
 		</BlockGenus>
 
-		<BlockGenus name="roboauto.drive-turn-inplace" kind="command" color="187 255 0" initlabel="bg.roboauto.drive-turn-inplace">
+		<BlockGenus name="roboauto.drive-turn-inplace-left" kind="command" color="187 255 0" initlabel="bg.roboauto.drive-turn-inplace-left">
 			<description>
 				<text>Fährt für die angegebene Zeit (ms) vorwärts</text>
 			</description>
@@ -464,6 +464,21 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		<BlockGenus name="roboauto.drive-turn-inplace-right" kind="command" color="187 255 0" initlabel="bg.roboauto.drive-turn-inplace-right">
+			<description>
+				<text>Fährt für die angegebene Zeit (ms) vorwärts</text>
+			</description>
+			<BlockConnectors>
+
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.roboauto.speed">
+					<DefaultArg genus-name="number" label="128" />
+				</BlockConnector>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.roboauto.duration_ms">
+					<DefaultArg genus-name="number" label="1000" />
+				</BlockConnector>
+
+			</BlockConnectors>
+		</BlockGenus>
 
 		<!--****************** Output *************** -->
 		<BlockGenus name="pin-write-digital" kind="command" color="74 108 212" initlabel="bg.pin-write-digital">
@@ -2380,7 +2395,9 @@
 
 				<BlockGenusMember>roboauto.drive-left</BlockGenusMember>
 				<BlockGenusMember>roboauto.drive-right</BlockGenusMember>
-				<BlockGenusMember>roboauto.drive-turn-inplace</BlockGenusMember>
+				<BlockGenusMember>roboauto.drive-turn-inplace-left</BlockGenusMember>
+				<BlockGenusMember>roboauto.drive-turn-inplace-right</BlockGenusMember>
+
 			</BlockDrawer>
 
 			<BlockDrawer button-color="41 158 37" name="bg.roboauto.sensors" type="default">
@@ -2394,8 +2411,6 @@
 				<BlockGenusMember>roboauto.line-dark</BlockGenusMember>
 				<BlockGenusMember>roboauto.line-bright</BlockGenusMember>
 			</BlockDrawer>
-
-
 
 
 			<BlockDrawer button-color="74 108 212" name="bd.output" type="default">
