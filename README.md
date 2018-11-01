@@ -1,13 +1,12 @@
-# ArduBlock 2 Source (for Arduino IDE 1.8+) #
+# ArduBlock 2 mit Erweiterung für das Elegoo Smart Car v3
 
-Source-Code for ArduBlock V2 for letsgoING Project.
+Fork des ArduBlock 2 Source Repos mit zusätzlichen Blöcken, um das Elegoo Smart Car einfacher damit steuern zu können.
 
-## Setting up Eclipse ##
-1. Download the files
-2. Start Eclipe and select workspace
-3. Import openblocks-project (File->Import: General->Existing Projects into Workspace)
-4. Import ardublock-project
-5. Test ArduBlock by running ArduBlock-Main as Java-Application (src/main/java/com/ardublock)
+## 1. Kompilieren
+- im `openblocks-master/openblocks-master` Ordner einmalig `mvn clean package` ausführen
+- im `ardublock-master/ardublock-master` Ordner `mvn clean package` ausführen, wenn Änderungen gemacht wurden, um das Ardublock-JAR neu zu erstellen
 
-For more information click here:
-http://blog.ardublock.com/2012/06/11/setup-ardublock-development-in-eclipse/
+## 2. Installation
+- Das Ardublock-JAR unter `ardublock-master/ardublock-master/target/ardublock-all.jar` in den `tools`-Ordner der Arduino Installation kopieren
+
+- Aus dem `roboauto-arduino-lib` Repo den `RoboAuto`-Ordner in den `libraries`-Ordner der Arduino Installation kopieren
