@@ -1,13 +1,11 @@
 package com.ardublock.translator.block.roboauto;
 
 import com.ardublock.translator.Translator;
-import com.ardublock.translator.block.ConstBlock;
 
-public class RoboAutoInitLinieBlock extends ConstBlock {
+public class RoboAutoInitLinieBlock extends RoboAutoConstSetupBlock {
 	public RoboAutoInitLinieBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix,
 			String label) {
-		super(blockId, translator, codePrefix, codeSuffix, label);
-		this.setCode("initLinensensor();\n");
+		super(blockId, translator, codePrefix, codeSuffix, label, "initLinienSensor();");
 	}
 
 }

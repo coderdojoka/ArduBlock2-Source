@@ -1,12 +1,13 @@
 package com.ardublock.translator.block.roboauto;
 
 import com.ardublock.translator.Translator;
-import com.ardublock.translator.block.ConstBlock;
 
-public class RoboAutoInitUltraschallBlock extends ConstBlock {
+public class RoboAutoInitUltraschallBlock extends RoboAutoConstSetupBlock {
 	public RoboAutoInitUltraschallBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix,
 			String label) {
-		super(blockId, translator, codePrefix, codeSuffix, label);
-		this.setCode("initUltraschallSensor();\n");
+		super(blockId, translator, codePrefix, codeSuffix, label, "initUltraschallSensor();");
+
+		// make sure to include our header file
+		translator.addHeaderFile("roboauto.h");
 	}
 }

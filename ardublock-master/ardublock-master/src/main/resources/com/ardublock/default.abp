@@ -3,7 +3,7 @@
 <Pages collapsible-pages="yes" drawer-with-page="yes">
 <Page page-color="128 128 128" page-drawer="Main" page-infullview="yes" page-name="Main" page-width="1600">
 <PageBlocks>
-<Block genus-name="loop" id="293">
+<Block genus-name="program" id="293">
 <Location>
 <X>130</X>
 <Y>75</Y>

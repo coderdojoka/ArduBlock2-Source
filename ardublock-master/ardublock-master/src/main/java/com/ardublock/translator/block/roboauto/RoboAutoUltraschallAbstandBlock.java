@@ -7,13 +7,10 @@ public class RoboAutoUltraschallAbstandBlock extends ConstBlock {
 	public RoboAutoUltraschallAbstandBlock(Long blockId, Translator translator, String codePrefix, String codeSuffix,
 			String label) {
 		super(blockId, translator, codePrefix, codeSuffix, label);
-		//this.translator.addNumberVariable("Ultraschall Abstand in CM", "ultraschallAbstand");
-		
-		this.setCode("ultraschallAbstandCM();\n");
-		translator.addSetupCommand("initUltraschall();");
+		// this.translator.addNumberVariable("Ultraschall Abstand in CM",
+		// "ultraschallAbstand");
 
-		// make sure to include our header file
-		translator.addHeaderFile("roboauto.h");
+		this.setCode("ultraschallAbstandCM();\n");
 	}
 
 }
