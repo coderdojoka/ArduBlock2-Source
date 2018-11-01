@@ -36,6 +36,7 @@
 <!--is-starter and is-terminator only apply to blocks of kind: command -->
 <!ATTLIST BlockGenus is-starter (yes|no) "no">
 <!ATTLIST BlockGenus is-terminator (yes|no) "no">
+<!ATTLIST BlockGenus code-extra CDATA "no">
 
 
 <!--This defines a block description and the description of its block arguments-->

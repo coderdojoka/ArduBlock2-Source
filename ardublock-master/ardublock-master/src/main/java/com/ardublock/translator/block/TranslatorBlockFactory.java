@@ -53,7 +53,9 @@ public class TranslatorBlockFactory
 			TranslatorBlock ret = (TranslatorBlock)constructor.newInstance(blockId, translator, codePrefix, codeSuffix, label);
 			return ret;
 		}
-		catch (IllegalArgumentException e) {
+		catch(NullPointerException e) {
+			e.printStackTrace();
+		}catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		} catch (InstantiationException e) {
 			e.printStackTrace();
