@@ -357,6 +357,27 @@
 			</BlockConnectors>
 		</BlockGenus>
 
+		
+		<BlockGenus name="roboauto.servo-init" kind="command" color="0 221 140" initlabel="bg.roboauto.servo-init"></BlockGenus>
+		<BlockGenus name="roboauto.servo-turn-forward" kind="command" color="0 221 140" initlabel="bg.roboauto.servo-turn-forward"></BlockGenus>
+		<BlockGenus name="roboauto.servo-turn-left" kind="command" color="0 221 140" initlabel="bg.roboauto.servo-turn-left"></BlockGenus>
+		<BlockGenus name="roboauto.servo-turn-right" kind="command" color="0 221 140" initlabel="bg.roboauto.servo-turn-right"></BlockGenus>
+
+		<BlockGenus name="roboauto.servo-turn-by" kind="command" color="0 221 140" initlabel="bg.roboauto.servo-turn-by">
+			<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.roboauto.angle">
+					<DefaultArg genus-name="number" label="10" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+		<BlockGenus name="roboauto.servo-set-to" kind="command" color="0 221 140" initlabel="bg.roboauto.servo-set-to">
+		<BlockConnectors>
+				<BlockConnector connector-type="number" connector-kind="socket" label="bc.roboauto.angle">
+					<DefaultArg genus-name="number" label="90" />
+				</BlockConnector>
+			</BlockConnectors>
+		</BlockGenus>
+
 
 		<BlockGenus name="roboauto.set-speed" kind="command" color="41 158 37" initlabel="bg.roboauto.set-speed">
 			<description>
@@ -2410,6 +2431,16 @@
 				<BlockGenusMember>roboauto.line-right</BlockGenusMember>
 				<BlockGenusMember>roboauto.line-dark</BlockGenusMember>
 				<BlockGenusMember>roboauto.line-bright</BlockGenusMember>
+				
+				<BlockGenusMember>roboauto.servo-init</BlockGenusMember>
+				<BlockGenusMember>roboauto.servo-turn-forward</BlockGenusMember>
+				<BlockGenusMember>roboauto.servo-turn-left</BlockGenusMember>
+				<BlockGenusMember>roboauto.servo-turn-right</BlockGenusMember>
+
+
+				<BlockGenusMember>roboauto.servo-turn-by</BlockGenusMember>
+				<BlockGenusMember>roboauto.servo-set-to</BlockGenusMember>
+
 			</BlockDrawer>
 
 
